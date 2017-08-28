@@ -15,7 +15,7 @@ npm install --save-dev fetch-reply-with
 ```js
 var fetch = require('fetch-reply-with');
 
-// add a fetch intercept
+// add a fetch reply for GET http://www.orcascan.com
 fetch('http://www.orcascan.com', {
 
     // regular fetch option
@@ -24,23 +24,26 @@ fetch('http://www.orcascan.com', {
     // add reply for this fetch
     replyWith: {
         status: 200,
-        data: 'Bulk Barcode Scanning app',
+        body: 'Bulk Barcode Scanning app',
         headers: {
             'Content-Type': 'text/html'
         }
     }
+})
+.then(function(res) {
+    // handle the response within the first then (as suggested by https://github.com/kevmarchant)
 });
 
-// execute a fetch request
+// or execute the fetch later to receive the same response
 fetch('http://www.orcascan.com').then(function(res){
     return res.text();
 })
 .then(function(text){
     // text now equals Bulk Barcode Scanning app
-})
+});
 ```
 
-_Any requests not intercepted will proceed as normal._
+_Requests without replies are executed as normal._
 
 ## Tests
 
