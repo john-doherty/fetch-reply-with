@@ -40,7 +40,7 @@ fetch('http://www.orcascan.com').then(function(res){
 })
 ```
 
-Any requests not intercepted will be allowed to proceed as normal.
+_Any requests not intercepted will proceed as normal._
 
 ## Tests
 
