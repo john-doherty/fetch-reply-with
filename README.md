@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/fetch-reply-with.svg)](https://www.npmjs.com/package/fetch-reply-with) [![Shippable branch](https://img.shields.io/shippable/59a3e414c80c0407002b779f/master.svg)](https://app.shippable.com/projects/59a3e414c80c0407002b779f) [![Linked In](https://img.shields.io/badge/Linked-In-blue.svg)](https://www.linkedin.com/in/john-i-doherty) [![Twitter Follow](https://img.shields.io/twitter/follow/CambridgeMVP.svg?style=social&label=Twitter&style=plastic)](https://twitter.com/CambridgeMVP)
 
-Adds global [fetch API](https://developers.google.com/web/updates/2015/03/introduction-to-fetch) to node using [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch) with an additional `.replyWith` option to enable returning hard-coded responses to unit tests.
+Adds global [fetch API](https://developers.google.com/web/updates/2015/03/introduction-to-fetch) to node using [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch) with an optional `.replyWith` param to return hard-coded responses to unit tests.
 
 ## Installation
 
