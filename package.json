@@ -26,5 +26,124 @@
   "license": "MIT",
   "dependencies": {
     "isomorphic-fetch": "^2.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "es6": false,
+      "browser": false
+    },
+    "globals": {
+      "Promise": true,
+      "expect": true,
+      "it": true,
+      "describe": true,
+      "beforeEach": true,
+      "afterEach": true
+    },
+    "rules": {
+      "brace-style": [
+        "error",
+        "stroustrup"
+      ],
+      "comma-dangle": [
+        "error",
+        "never"
+      ],
+      "func-names": 0,
+      "indent": [
+        "error",
+        4,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "max-len": [
+        2,
+        180,
+        4,
+        {
+          "ignoreUrls": true,
+          "ignoreComments": false
+        }
+      ],
+      "new-cap": [
+        "error",
+        {
+          "capIsNewExceptions": [
+            "Router",
+            "ObjectId",
+            "DEBUG"
+          ],
+          "properties": false
+        }
+      ],
+      "no-underscore-dangle": 0,
+      "no-unused-vars": [
+        "warn"
+      ],
+      "no-use-before-define": [
+        "error",
+        {
+          "functions": false
+        }
+      ],
+      "no-var": [
+        "off"
+      ],
+      "one-var": [
+        "off"
+      ],
+      "vars-on-top": [
+        "off"
+      ],
+      "no-param-reassign": [
+        "off"
+      ],
+      "no-lone-blocks": [
+        "off"
+      ],
+      "padded-blocks": 0,
+      "prefer-template": [
+        "off"
+      ],
+      "prefer-arrow-callback": [
+        "off"
+      ],
+      "default-case": [
+        "off"
+      ],
+      "wrap-iife": [
+        2,
+        "inside"
+      ],
+      "no-plusplus": [
+        "off"
+      ],
+      "require-jsdoc": [
+        "warn",
+        {
+          "require": {
+            "FunctionDeclaration": true,
+            "MethodDefinition": true,
+            "ClassDeclaration": true
+          }
+        }
+      ],
+      "object-shorthand": [
+        "error",
+        "never"
+      ],
+      "space-before-function-paren": "off",
+      "strict": "off",
+      "valid-jsdoc": [
+        "error"
+      ]
+    }
   }
 }
