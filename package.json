@@ -1,0 +1,26 @@
+{
+  "name": "fetch-reply-with",
+  "version": "1.0.0",
+  "description": "Adds window.fetch to node with the ability to intercept requests and reply with canned responses - simplifying unit testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fetch-reply-with",
+    "fetch",
+    "window.fetch",
+    "whatwg-fetch",
+    "node-fetch",
+    "fetch-mock",
+    "farfetched",
+    "mock-fetch-api",
+    "mock fetch API",
+    "unit testing",
+    "unit testing fetch"
+  ],
+  "author": "John Doherty <contact@johndoherty.info> (www.johndoherty.info)",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
