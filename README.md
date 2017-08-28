@@ -26,7 +26,7 @@ fetch('http://www.orcascan.com', {
         status: 200,
         data: 'Bulk Barcode Scanning app',
         headers: {
-            key: 'value'
+            'Content-Type': 'text/html'
         }
     }
 });
