@@ -23,6 +23,7 @@
     "unit testing fetch"
   ],
   "author": "John Doherty <contact@johndoherty.info> (www.johndoherty.info)",
+  "license": "MIT",
   "dependencies": {
     "isomorphic-fetch": "^2.2.1"
   }
