@@ -1,7 +1,7 @@
 {
   "name": "fetch-reply-with",
-  "version": "1.0.2",
-  "description": "Adds window.fetch to node with a .replyWith option to return a canned response for unit testing.",
+  "version": "1.0.3",
+  "description": "Adds global fetch API to node using isomorphic-fetch with a .replyWith option to return hard-coded responses for unit testing.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/jasmine-node/bin/jasmine-node tests --verbose --color --forceexit --junitreport || true"
