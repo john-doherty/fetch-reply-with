@@ -24,6 +24,10 @@
   ],
   "author": "John Doherty <contact@johndoherty.info> (www.johndoherty.info)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/john-doherty/fetch-reply-with.git"
+  },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1"
   },
