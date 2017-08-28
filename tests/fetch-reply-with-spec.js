@@ -8,8 +8,28 @@ describe('fetch-reply-with', function() {
         expect(fetch).toBeDefined();
     });
 
-    it('should expose fetch.replyWith object', function() {
-        expect(fetch('http://www.orcascan.com').replyWith).toBeDefined();
-        expect(typeof fetch('http://www.orcascan.com').replyWith).toBe('function');
+    it('should intercept requests', function(done) {
+
+        var url = 'http://www.orcascan.com';
+        var status = 200;
+        var body = 'Bulk Barcode Scanning app';
+
+        // setup request intercept
+        fetch(url, {
+            replyWith: {
+                status: 200,
+                data: body
+            }
+        });
+
+        // execute actual request
+        fetch(url).then(function(res) {
+            expect(res.status).toEqual(status);
+            return res.text();
+        })
+        .then(function(text) {
+            expect(text).toEqual(body);
+            done();
+        });
     });
 });
