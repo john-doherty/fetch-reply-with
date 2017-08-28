@@ -17,8 +17,10 @@ var fetch = require('fetch-reply-with');
 
 // add a fetch intercept
 fetch('http://www.orcascan.com', {
+
     // regular fetch option
     method: 'GET',
+
     // add reply for this fetch
     replyWith: {
         status: 200,
