@@ -1,6 +1,6 @@
 {
   "name": "fetch-reply-with",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Adds global fetch API to node using isomorphic-fetch with a .replyWith option to return hard-coded responses for unit testing.",
   "main": "index.js",
   "scripts": {
