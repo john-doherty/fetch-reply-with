@@ -1,10 +1,10 @@
 {
   "name": "fetch-reply-with",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adds window.fetch to node with the ability to intercept requests and reply with canned responses - simplifying unit testing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/jasmine-node/bin/jasmine-node tests --verbose --color --forceexit --junitreport || true"
   },
   "engines": {
     "node": "^5.12.0"
@@ -34,7 +34,8 @@
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-plugin-import": "^2.2.0",
+    "jasmine-node": "^1.14.5"
   },
   "eslintConfig": {
     "extends": "airbnb-base",
@@ -48,7 +49,8 @@
       "it": true,
       "describe": true,
       "beforeEach": true,
-      "afterEach": true
+      "afterEach": true,
+      "Response": true
     },
     "rules": {
       "brace-style": [
@@ -149,5 +151,12 @@
         "error"
       ]
     }
+  },
+  "bugs": {
+    "url": "https://github.com/john-doherty/fetch-reply-with/issues"
+  },
+  "homepage": "https://github.com/john-doherty/fetch-reply-with#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
