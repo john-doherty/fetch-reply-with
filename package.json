@@ -1,7 +1,7 @@
 {
   "name": "fetch-reply-with",
-  "version": "1.2.1",
-  "description": "Mock fetch requests and responses in node using fetch .replyWith",
+  "version": "1.2.2",
+  "description": "Mock http requests made using fetch in node using fetch .replyWith, simplifying unit testing",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/jasmine-node/bin/jasmine-node tests --verbose --color --forceexit --junitreport || true"
