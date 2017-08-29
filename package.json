@@ -1,6 +1,6 @@
 {
   "name": "fetch-reply-with",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Node module to mock fetch http requests using .replyWith, simplifying unit testing",
   "main": "index.js",
   "scripts": {

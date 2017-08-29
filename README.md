@@ -13,7 +13,7 @@ npm install --save-dev fetch-reply-with
 ## Usage
 
 ```js
-var fetch = require('fetch-reply-with');
+require('fetch-reply-with'); // <- fetch is now globally available within the node environment
 
 // add a fetch reply for GET http://www.orcascan.com
 fetch('http://www.orcascan.com', {
@@ -31,10 +31,11 @@ fetch('http://www.orcascan.com', {
     }
 })
 .then(function(res) {
-    // handle the response within the first then (as suggested by https://github.com/kevmarchant)
+    // handle the response within the first then
+    // as suggested by https://github.com/kevmarchant
 });
 
-// or execute the fetch later to receive the same response
+// or at some point in the future
 fetch('http://www.orcascan.com').then(function(res){
     return res.text();
 })
