@@ -46,16 +46,26 @@ fetch('http://www.orcascan.com').then(function(res){
 
 _Requests without replies are executed as normal._
 
-## Tests
+## Unit Tests
 
-The project includes unit tests, to run the tests execute the following from the command line:
+The project includes unit tests, to run the tests:
 
-```bash
-git clone https://github.com/john-doherty/fetch-reply-with
-cd fetch-reply-with
-npm install
-npm test
-```
+1. Checkout `git clone https://github.com/john-doherty/fetch-reply-with`
+2. Navigate into project folder `cd fetch-reply-with`
+3. Install dependencies `npm install`
+4. Run the tests `npm test`
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :)
+
+## History
+
+For detailed changelog, check [Releases](https://github.com/john-doherty/fetch-reply-with/releases).
 
 ## License
 
