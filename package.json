@@ -1,7 +1,7 @@
 {
   "name": "fetch-reply-with",
-  "version": "1.2.5",
-  "description": "Node module to mock fetch http requests using .replyWith, simplifying unit testing",
+  "version": "1.2.6",
+  "description": "Unit test fetch requests with ease by setting up mock responses",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/jasmine-node/bin/jasmine-node tests --verbose --color --forceexit --junitreport || true"
@@ -21,7 +21,11 @@
     "mock-fetch-api",
     "mock fetch API",
     "unit testing",
-    "unit testing fetch"
+    "unit testing fetch",
+    "unit test",
+    "mock",
+    "http",
+    "ajax"
   ],
   "author": "John Doherty <contact@johndoherty.info> (www.johndoherty.info)",
   "license": "MIT",
