@@ -1,6 +1,6 @@
 {
   "name": "fetch-reply-with",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "Unit test fetch requests with ease by setting up mock responses",
   "main": "index.js",
   "scripts": {
