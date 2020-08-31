@@ -1,34 +1,26 @@
 {
   "name": "fetch-reply-with",
-  "version": "1.2.9",
-  "description": "Unit test fetch requests with ease by setting up mock responses",
+  "version": "1.3.0",
+  "description": "Mock window.fetch requests",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/jasmine-node/bin/jasmine-node tests --verbose --color --forceexit --junitreport || true"
   },
   "keywords": [
     "fetch",
-    "fetch-reply-with",
-    "fetch reply with",
-    "window.fetch",
     "whatwg-fetch",
     "node-fetch",
-    "fetch-mock",
-    "farfetched",
-    "mock-fetch-api",
-    "mock fetch API",
-    "unit testing",
-    "unit testing fetch",
-    "unit test",
     "mock",
+    "request",
+    "test",
     "http",
     "ajax"
   ],
-  "author": "John Doherty <contact@johndoherty.info> (www.johndoherty.info)",
+  "author": "John Doherty <john@orcascan.com> (https://orcascan.com)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/john-doherty/fetch-reply-with.git"
+    "url": "git+https://github.com/orca-scan/fetch-reply-with.git"
   },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1"
@@ -156,9 +148,9 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/john-doherty/fetch-reply-with/issues"
+    "url": "https://github.com/orca-scan/fetch-reply-with/issues"
   },
-  "homepage": "https://github.com/john-doherty/fetch-reply-with#readme",
+  "homepage": "https://github.com/orca-scan/fetch-reply-with#readme",
   "directories": {
     "lib": "lib"
   }
