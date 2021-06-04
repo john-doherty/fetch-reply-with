@@ -67,7 +67,7 @@ The project includes unit tests, to run the tests:
 
 ## Star the repo
 
-If you find this useful please star the repo, it helps us prioritize bug fixes :raised_hands:
+If you find this useful please star the repo, it helps us prioritize fixes :raised_hands:
 
 ## History
 
@@ -75,4 +75,4 @@ For change-log, check [releases](https://github.com/orca-scan/fetch-reply-with/r
 
 ## License
 
-Licensed under [MIT License](LICENSE) &copy; [Orca Scan](https://orcascan.com)
+Licensed under [MIT License](LICENSE) &copy; Orca Scan, the [Barcode Scanner app for iOS and Android](https://orcascan.com).
