@@ -52,7 +52,7 @@ _Requests that are not intercepted are executed as normal._
 
 The project includes unit tests, to run the tests:
 
-1. Checkout `git clone https://github.com/orca-scan/fetch-reply-with`
+1. Checkout `git clone https://github.com/john-doherty/fetch-reply-with`
 2. Navigate into project folder `cd fetch-reply-with`
 3. Install dependencies `npm install`
 4. Run the tests `npm test`
@@ -71,8 +71,8 @@ If you find this useful please star the repo, it helps us prioritize fixes :rais
 
 ## History
 
-For change-log, check [releases](https://github.com/orca-scan/fetch-reply-with/releases).
+For change-log, check [releases](https://github.com/john-doherty/fetch-reply-with/releases).
 
 ## License
 
-Licensed under [MIT License](LICENSE) &copy; Orca Scan, the [Barcode Scanner app for iOS and Android](https://orcascan.com).
+Licensed under [MIT License](LICENSE) &copy; [John Doherty](https://twitter.com/mrjohndoherty)
