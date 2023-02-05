@@ -1,6 +1,6 @@
 {
   "name": "fetch-reply-with",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "Mock window.fetch requests to ease unit testing",
   "main": "index.js",
   "scripts": {
