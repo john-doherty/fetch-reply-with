@@ -30,7 +30,7 @@ fetch('http://www.orcascan.com', {
     // add reply for this fetch
     replyWith: {
         status: 200,
-        body: 'Bulk Barcode Scanning app',
+        body: 'Barcode Scanner app',
         headers: {
             'Content-Type': 'text/html'
         }
