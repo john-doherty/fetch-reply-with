@@ -1,9 +1,10 @@
 # fetch-reply-with
 
 [![npm version](https://badge.fury.io/js/fetch-reply-with.svg)](https://www.npmjs.com/package/fetch-reply-with)
-[![Shippable branch](https://img.shields.io/shippable/59a3e414c80c0407002b779f/master.svg)](https://app.shippable.com/projects/59a3e414c80c0407002b779f)
+[![Tests](https://github.com/john-doherty/fetch-reply-with/actions/workflows/ci.yml/badge.svg)](https://github.com/john-doherty/fetch-reply-with/actions/workflows/ci.yml)
 
-Simplifies unit tests by intercepting [window.fetch](https://developers.google.com/web/updates/2015/03/introduction-to-fetch#fetch) requests and returning [mocked](https://en.wikipedia.org/wiki/Mock_object) responses.
+
+Simplifies unit tests by intercepting [fetch](https://developers.google.com/web/updates/2015/03/introduction-to-fetch#fetch) requests and returning [mocked](https://en.wikipedia.org/wiki/Mock_object) responses.
 
 ## Install
 
