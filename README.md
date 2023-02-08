@@ -15,14 +15,10 @@ npm install --save-dev fetch-reply-with
 ## Usage
 
 ```js
-require('fetch-reply-with'); // <- fetch is now globally available within the node environment
+require('fetch-reply-with'); // <- `fetch` is now globally available
 
-//
-// setup URL intercepts and mock responses
-//
-
-// intercept GET http://www.orcascan.com
-fetch('http://www.orcascan.com', {
+// setup intercept GET http://orcascan.com to reply with...
+fetch('http://orcascan.com', {
 
     // regular fetch option
     method: 'GET',
@@ -37,17 +33,18 @@ fetch('http://www.orcascan.com', {
     }
 });
 
-// typical fetch request
+// execute fetch request
 fetch('http://www.orcascan.com').then(function(res){
-    // gets mocked response
     return res.text();
 })
 .then(function(text){
-    // text now equals Bulk Barcode Scanning app
+    // text now equals Barcode Scanning app
 });
 ```
 
-_Requests that are not intercepted are executed as normal._
+Couple of things to note:
+* Requests that are not intercepted are executed as normal
+* A `replyWith` can be modified by defining the `replyWith` again
 
 ## Unit Tests
 
