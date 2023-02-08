@@ -4,7 +4,7 @@
   "description": "Mock window.fetch requests to ease unit testing",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/jasmine-node/bin/jasmine-node tests --verbose --color --forceexit --junitreport || true"
+    "test": "NODE_ENV=test node_modules/.bin/jasmine tests/**/*-spec.js --reporter=jasmine-console-reporter"
   },
   "keywords": [
     "fetch",
@@ -24,13 +24,15 @@
   },
   "dependencies": {
     "cuid": "^3.0.0",
-    "isomorphic-fetch": "^2.2.1"
+    "isomorphic-fetch": "^2.2.1",
+    "jasmine": "^4.5.0",
+    "jasmine-console-reporter": "^3.1.0",
+    "jasmine-xml-reporter": "^1.2.1"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.2.0",
-    "jasmine-node": "^1.14.5"
+    "eslint-plugin-import": "^2.2.0"
   },
   "eslintConfig": {
     "extends": "airbnb-base",
