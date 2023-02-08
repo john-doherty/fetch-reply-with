@@ -35,7 +35,7 @@ fetch('http://orcascan.com', {
 });
 
 // execute fetch request
-fetch('http://.orcascan.com').then(function(res){
+fetch('http://orcascan.com').then(function(res){
     return res.text();
 })
 .then(function(text){
