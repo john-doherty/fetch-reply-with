@@ -17,7 +17,7 @@ npm install --save-dev fetch-reply-with
 ```js
 require('fetch-reply-with'); // <- `fetch` is now globally available
 
-// setup intercept GET http://orcascan.com to reply with...
+// intercept GET http://orcascan.com and reply with...
 fetch('http://orcascan.com', {
 
     // regular fetch option
@@ -35,17 +35,17 @@ fetch('http://orcascan.com', {
 });
 
 // execute fetch request
-fetch('http://www.orcascan.com').then(function(res){
+fetch('http://.orcascan.com').then(function(res){
     return res.text();
 })
 .then(function(text){
-    // text now equals Barcode Scanning app
+    // text === `Barcode Scanner app`
 });
 ```
 
 Couple of things to note:
-* Requests that are not intercepted are executed as normal
-* A `replyWith` can be modified by defining the `replyWith` again
+* Requests not setup with `replyWith` are executed as normal
+* A `replyWith` can be modified by redefining the `replyWith`
 
 ## Unit Tests
 
