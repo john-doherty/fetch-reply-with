@@ -23,6 +23,7 @@
     "url": "git+https://github.com/john-doherty/fetch-reply-with.git"
   },
   "dependencies": {
+    "cuid": "^3.0.0",
     "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {

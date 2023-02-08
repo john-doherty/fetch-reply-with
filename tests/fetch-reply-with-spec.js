@@ -1,6 +1,5 @@
-'use strict';
-
 var fetch = require('../index.js');
+var cuid = require('cuid');
 
 describe('fetch-reply-with', function() {
 
@@ -10,7 +9,7 @@ describe('fetch-reply-with', function() {
 
     it('should intercept requests', function(done) {
 
-        var url = 'http://www.orcascan.com';
+        var url = 'http://orcascan.com';
         var status = randomIntBetween(200, 299);
         var body = 'Bulk Barcode Scanning app';
 
@@ -70,10 +69,9 @@ describe('fetch-reply-with', function() {
 
     it('should also return response to first then', function(done) {
 
-        var now = (new Date()).getTime();
-        var url = 'http://www.' + now + '.com';
+        var url = `http://www.${cuid.slug()}.com`;
         var status = randomIntBetween(200, 299);
-        var body = String(now);
+        var body = cuid.slug();
 
         // setup request intercept
         fetch(url, {
@@ -89,11 +87,50 @@ describe('fetch-reply-with', function() {
             expect(res.status).toEqual(status);
             expect(res.headers.has('content-type')).toBe(true);
             expect(res.headers.get('content-type')).toBe('application/json');
-
             return res.text();
         })
         .then(function(text) {
             expect(text).toEqual(body);
+            done();
+        })
+        .catch(done);
+    });
+
+    it('should allow intercept to be updated', function(done) {
+
+        var url = `http://www.${cuid.slug()}.com`;
+        var status = randomIntBetween(200, 299);
+        var body1 = cuid.slug();
+        var body2 = cuid.slug();
+
+        fetch(url, {
+            replyWith: {
+                status: status,
+                body: body1,
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }
+        });
+
+        fetch(url, {
+            replyWith: {
+                status: status,
+                body: body2,
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }
+        });
+
+        fetch(url).then(function(res) {
+            expect(res.status).toEqual(status);
+            expect(res.headers.has('content-type')).toBe(true);
+            expect(res.headers.get('content-type')).toBe('application/json');
+            return res.text();
+        })
+        .then(function(text) {
+            expect(text).toEqual(body2);
             done();
         })
         .catch(done);
