@@ -29,7 +29,8 @@ fetch('http://orcascan.com', {
         body: 'Barcode Scanner app',
         headers: {
             'Content-Type': 'text/html'
-        }
+        },
+        delay: 500 // miliseconds to wait before responding (default = 0)
     }
 });
 

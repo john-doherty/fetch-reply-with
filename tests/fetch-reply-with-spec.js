@@ -135,6 +135,40 @@ describe('fetch-reply-with', function() {
         })
         .catch(done);
     });
+
+    it('should not reply until ~500ms have passed', function(done) {
+
+        var url = `http://www.${cuid.slug()}.com`;
+        var status = randomIntBetween(200, 299);
+        var body = cuid.slug();
+
+        fetch(url, {
+            replyWith: {
+                status: status,
+                body: body,
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                delay: 500
+            }
+        });
+
+        var startTime = new Date();
+
+        fetch(url).then(function() {
+
+            var endTime = new Date();
+
+            // calculate time passed in ms
+            var timePassed = endTime - startTime;
+
+            // JS is never bang on with timeouts, allow ~50ms
+            expect(timePassed).toBeGreaterThan(450);
+
+            done();
+        })
+        .catch(done);
+    });
 });
 
 /* --- HELPERS --- */
